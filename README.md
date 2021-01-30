@@ -56,12 +56,14 @@ Reach out to me!
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/MFahadUmer/Endless-Runner/issues).
+Feel free to check the [issues page](https://github.com/MFahadUmer/Recipes/issues).
 
 ## Acknowledgments
 
 - Thanks to Microverse for its support!
 - Thanks React Community
+- Thanks to [Marc-Antoine Roy](http://mantoine.ca/) for his awesome Designs.
+- Thanks to [behance](https://www.behance.net/gallery/11351281/NomNom)
 
 ## Show your support
 

@@ -6,7 +6,7 @@ import {
 
 const initialState = {
   loading: false,
-  foods: [],
+  foods: { meals: [] },
   error: '',
 };
 
@@ -23,7 +23,6 @@ const foodReducer = (state = initialState, action) => {
     };
     case FETCH_FOOD_FAILURE: return {
       loading: false,
-      foods: [],
       error: action.payload,
     };
     default: return state;

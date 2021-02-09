@@ -4,6 +4,7 @@ import React from 'react';
 const Foods = ({ foodName, foodImage }) => (
   <div className="foods">
     <img className="foodImage" src={foodImage} alt={foodName} />
+    <div className="foodName">{foodName}</div>
   </div>
 );
 

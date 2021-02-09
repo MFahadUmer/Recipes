@@ -1,10 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // eslint-disable-next-line react/prop-types
-const Foods = ({ foodName, foodImage }) => (
+const Foods = ({ uniqueKey, foodName, foodImage }) => (
   <div className="foods">
     <img className="foodImage" src={foodImage} alt={foodName} />
-    <div className="foodName">{foodName}</div>
+    <Link to={`/foodDetails/${uniqueKey}`}>
+      <div className="foodName">
+        {foodName}
+      </div>
+    </Link>
   </div>
 );
 

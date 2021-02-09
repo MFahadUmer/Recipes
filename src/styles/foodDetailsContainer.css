@@ -1,0 +1,21 @@
+.foodDetailsContainer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 50px;
+  align-items: center;
+}
+
+.foodDetailsImage {
+  border-radius: 25px;
+}
+
+.foodDetailsHeader {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 5rem;
+  background-color: gray;
+  border-radius: 25px;
+  color: white;
+}

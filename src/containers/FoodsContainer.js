@@ -17,13 +17,19 @@ const FoodsContainer = ({
       filterBooks = data.map(food => (
         <Foods
           key={food.idMeal}
+          uniqueKey={food.idMeal}
           foodName={food.strMeal}
           foodImage={food.strMealThumb}
         />
       ));
     } else {
       filterBooks = data.filter(food => food.strCategory === category).map(food => (
-        <Foods key={food.idMeal} foodName={food.strMeal} foodImage={food.strMealThumb} />
+        <Foods
+          key={food.idMeal}
+          uniqueKey={food.idMeal}
+          foodName={food.strMeal}
+          foodImage={food.strMealThumb}
+        />
       ));
     }
   }

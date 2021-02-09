@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import CategoriesContainer from '../containers/CategoriesContainer';
 
@@ -7,7 +8,7 @@ const Navbar = ({ eventHandler }) => (
   <div className="navbarContainer">
     <div className="navbar">
       <div className="logo">
-        <img className="logo" src={logo} alt="logo" />
+        <Link to="/"><img className="logo" src={logo} alt="logo" /></Link>
       </div>
       <div>
         <CategoriesContainer eventHandler={eventHandler} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-// eslint-disable-next-line react/prop-types,no-unused-vars
+// eslint-disable-next-line react/prop-types
 const CategoriesContainer = ({ eventHandler }) => {
   const categories = ['All'];
   const foods = useSelector(state => state.foods.meals);
@@ -15,7 +15,6 @@ const CategoriesContainer = ({ eventHandler }) => {
   }
   return (
     <select className="selectCategory" name="categories" id="categories" onChange={eventHandler}>
-      {/* eslint-disable-next-line max-len */}
       {categories.map(food => <option className="selectCategory" key={food} value={food}>{food}</option>)}
     </select>
   );

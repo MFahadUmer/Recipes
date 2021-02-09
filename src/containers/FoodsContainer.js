@@ -14,11 +14,17 @@ const FoodsContainer = ({
   } else {
     data = foods;
     if (category === 'All' || '') {
-      // eslint-disable-next-line max-len
-      filterBooks = data.map(food => <Foods key={food.idMeal} foodName={food.strMeal} foodImage={food.strMealThumb} />);
+      filterBooks = data.map(food => (
+        <Foods
+          key={food.idMeal}
+          foodName={food.strMeal}
+          foodImage={food.strMealThumb}
+        />
+      ));
     } else {
-      // eslint-disable-next-line max-len
-      filterBooks = data.filter(food => food.strCategory === category).map(food => <Foods key={food.idMeal} foodName={food.strMeal} foodImage={food.strMealThumb} />);
+      filterBooks = data.filter(food => food.strCategory === category).map(food => (
+        <Foods key={food.idMeal} foodName={food.strMeal} foodImage={food.strMealThumb} />
+      ));
     }
   }
   return (

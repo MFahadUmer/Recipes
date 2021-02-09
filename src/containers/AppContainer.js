@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchFood } from '../redux/food/foodActions';
 import Navbar from '../component/Navbar';
+import FoodsContainer from './FoodsContainer';
 
 const AppContainer = () => {
   // eslint-disable-next-line no-unused-vars
@@ -17,25 +18,11 @@ const AppContainer = () => {
   useEffect(() => {
     dispatch(fetchFood());
   }, []);
-  let data;
-  let filterBooks = '';
-  if (loading) {
-    data = 'loading';
-  } else if (error) {
-    data = 'Error Occured';
-  } else {
-    data = foods;
-    if (category === 'All' || '') {
-      filterBooks = data.map(food => <h2 key={food.strMeal}>{food.strMeal}</h2>);
-    } else {
-      // eslint-disable-next-line max-len
-      filterBooks = data.filter(food => food.strCategory === category).map(food => <h2 key={food.strMeal}>{food.strMeal}</h2>);
-    }
-  }
+
   return (
     <div>
       <Navbar eventHandler={eventHandler} />
-      <div>{filterBooks}</div>
+      <FoodsContainer category={category} foods={foods} loading={loading} error={error} />
     </div>
   );
 };

@@ -1,7 +1,6 @@
 .navbarContainer {
   height: 100px;
-  width: 100vw;
-  padding: 15px;
+  padding: 10px 0;
   background-color: gray;
   display: flex;
   align-items: center;

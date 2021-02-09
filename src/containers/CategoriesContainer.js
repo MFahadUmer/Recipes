@@ -14,9 +14,9 @@ const CategoriesContainer = ({ eventHandler }) => {
     });
   }
   return (
-    <select name="categories" id="categories" onChange={eventHandler}>
+    <select className="selectCategory" name="categories" id="categories" onChange={eventHandler}>
       {/* eslint-disable-next-line max-len */}
-      {categories.map(food => <option key={food} value={food}>{food}</option>)}
+      {categories.map(food => <option className="selectCategory" key={food} value={food}>{food}</option>)}
     </select>
   );
 };

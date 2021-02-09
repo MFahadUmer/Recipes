@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchFood } from '../redux/food/foodActions';
-import CategoriesContainer from './CategoriesContainer';
+import Navbar from '../component/Navbar';
 
 const AppContainer = () => {
   // eslint-disable-next-line no-unused-vars
@@ -34,7 +34,7 @@ const AppContainer = () => {
   }
   return (
     <div>
-      <CategoriesContainer eventHandler={eventHandler} />
+      <Navbar eventHandler={eventHandler} />
       <div>{filterBooks}</div>
     </div>
   );

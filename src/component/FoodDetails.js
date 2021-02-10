@@ -1,8 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import FoodDetailsInfo from './FoodDetailsInfo';
 
 const FoodDetails = ({
-  // eslint-disable-next-line react/prop-types,no-unused-vars
   name, category, image, strInstructions, strArea, strTags,
 }) => (
   <div className="foodDetailsContainer">
@@ -19,5 +19,23 @@ const FoodDetails = ({
     </div>
   </div>
 );
+
+FoodDetails.propTypes = {
+  name: PropTypes.string,
+  category: PropTypes.string,
+  image: PropTypes.string,
+  strInstructions: PropTypes.string,
+  strArea: PropTypes.string,
+  strTags: PropTypes.string,
+};
+
+FoodDetails.defaultProps = {
+  name: '',
+  category: '',
+  image: '',
+  strInstructions: '',
+  strArea: '',
+  strTags: '',
+};
 
 export default FoodDetails;

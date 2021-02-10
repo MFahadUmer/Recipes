@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import logo from '../assets/logo.png';
 import CategoriesContainer from '../containers/CategoriesContainer';
 
-// eslint-disable-next-line react/prop-types
 const Navbar = ({ eventHandler }) => (
   <div className="navbarContainer">
     <div className="navbar">
@@ -16,5 +16,13 @@ const Navbar = ({ eventHandler }) => (
     </div>
   </div>
 );
+
+Navbar.propTypes = {
+  eventHandler: PropTypes.func,
+};
+
+Navbar.defaultProps = {
+  eventHandler: '',
+};
 
 export default Navbar;

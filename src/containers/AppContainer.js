@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -8,7 +7,6 @@ import FoodsContainer from './FoodsContainer';
 import FoodDetailsContainer from './FoodDetailsContainer';
 
 const AppContainer = () => {
-  // eslint-disable-next-line no-unused-vars
   const [category, setCategory] = useState('All');
   const foods = useSelector(state => state.foods.meals);
   const loading = useSelector(state => state.loading);

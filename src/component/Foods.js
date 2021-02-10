@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-// eslint-disable-next-line react/prop-types
 const Foods = ({ uniqueKey, foodName, foodImage }) => (
   <div className="foods">
     <img className="foodImage" src={foodImage} alt={foodName} />
@@ -12,5 +12,17 @@ const Foods = ({ uniqueKey, foodName, foodImage }) => (
     </Link>
   </div>
 );
+
+Foods.propTypes = {
+  uniqueKey: PropTypes.string,
+  foodName: PropTypes.string,
+  foodImage: PropTypes.string,
+};
+
+Foods.defaultProps = {
+  uniqueKey: '',
+  foodName: '',
+  foodImage: '',
+};
 
 export default Foods;

@@ -1,5 +1,6 @@
 import React from 'react';
 import Foods from '../component/Foods';
+import Loading from '../component/Loading';
 
 const FoodsContainer = ({
   // eslint-disable-next-line react/prop-types
@@ -8,8 +9,10 @@ const FoodsContainer = ({
   let data;
   let filterBooks = '';
   if (loading) {
-    data = 'loading';
-  } else if (error) {
+    return (
+      <Loading color="blue" loading={loading} />
+    );
+  } if (error) {
     data = 'Error Occured';
   } else {
     data = foods;

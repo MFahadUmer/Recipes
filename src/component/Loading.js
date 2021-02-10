@@ -10,12 +10,12 @@ const Loading = ({ color, loading }) => (
 
 Loading.propTypes = {
   color: PropTypes.string,
-  loading: PropTypes.string,
+  loading: PropTypes.bool,
 };
 
 Loading.defaultProps = {
   color: '',
-  loading: '',
+  loading: false,
 };
 
 export default Loading;

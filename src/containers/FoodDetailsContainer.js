@@ -1,10 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 import FoodDetails from '../component/FoodDetails';
 
-// eslint-disable-next-line react/prop-types
 const FoodDetailsContainer = ({ match }) => {
-  // eslint-disable-next-line react/prop-types
   const foodId = match.params.id;
   const foods = useSelector(state => state.foods.meals);
   const selectedFood = foods.filter(food => food.idMeal === foodId).map(food => (
@@ -23,6 +22,18 @@ const FoodDetailsContainer = ({ match }) => {
       {selectedFood}
     </div>
   );
+};
+
+FoodDetailsContainer.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    }),
+  }),
+};
+
+FoodDetailsContainer.defaultProps = {
+  match: {},
 };
 
 export default FoodDetailsContainer;

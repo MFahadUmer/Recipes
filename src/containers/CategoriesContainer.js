@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 
-// eslint-disable-next-line react/prop-types
 const CategoriesContainer = ({ eventHandler }) => {
   const categories = ['All'];
   const foods = useSelector(state => state.foods.meals);
@@ -18,6 +18,14 @@ const CategoriesContainer = ({ eventHandler }) => {
       {categories.map(food => <option className="selectCategory" key={food} value={food}>{food}</option>)}
     </select>
   );
+};
+
+CategoriesContainer.propTypes = {
+  eventHandler: PropTypes.func,
+};
+
+CategoriesContainer.defaultProps = {
+  eventHandler: '',
 };
 
 export default CategoriesContainer;

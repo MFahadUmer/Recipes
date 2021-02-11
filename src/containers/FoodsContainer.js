@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import Pagination from 'react-js-pagination';
 import Foods from '../component/Foods';
 import Loading from '../component/Loading';
 
 const FoodsContainer = ({
   category, foods, error, loading,
 }) => {
+  const [activePage, setActivePage] = useState(5);
+  const [startPoint, setStartPoint] = useState(0);
+  const [endPoint, setEndPoint] = useState(4);
   let data;
   let filterBooks = '';
+  let paginationTotalElements;
+  const handlePageChange = pageNumber => {
+    setActivePage(pageNumber);
+    setStartPoint(pageNumber * 4);
+    setEndPoint((pageNumber + 1) * 4);
+  };
   if (loading) {
     return (
       <Loading color="blue" loading={loading} />
@@ -17,7 +27,8 @@ const FoodsContainer = ({
   } else {
     data = foods;
     if (category === 'All' || '') {
-      filterBooks = data.map(food => (
+      paginationTotalElements = foods.length;
+      filterBooks = data.slice(startPoint, endPoint).map(food => (
         <Foods
           key={food.idMeal}
           uniqueKey={food.idMeal}
@@ -26,7 +37,9 @@ const FoodsContainer = ({
         />
       ));
     } else {
-      filterBooks = data.filter(food => food.strCategory === category).map(food => (
+      filterBooks = data.filter(
+        food => food.strCategory === category,
+      ).slice(startPoint, endPoint).map(food => (
         <Foods
           key={food.idMeal}
           uniqueKey={food.idMeal}
@@ -39,6 +52,15 @@ const FoodsContainer = ({
   return (
     <div className="foodsContainer">
       {filterBooks}
+      <div>
+        <Pagination
+          activePage={activePage}
+          itemsCountPerPage={4}
+          totalItemsCount={paginationTotalElements}
+          pageRangeDisplayed={3}
+          onChange={handlePageChange}
+        />
+      </div>
     </div>
   );
 };

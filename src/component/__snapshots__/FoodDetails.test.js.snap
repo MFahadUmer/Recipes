@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Food Details Component Tests matches the Food Details component snapshot 1`] = `
+<div
+  className="foodDetailsContainer"
+>
+  <div>
+    <img
+      alt=""
+      className="foodDetailsImage"
+      src=""
+    />
+  </div>
+  <div
+    className="foodDetailsInfo"
+  >
+    <h2
+      className="foodDetailsHeader"
+    >
+      Food Details
+    </h2>
+    <div
+      className="foodDetailsInfoStyles"
+    >
+      <div
+        className="foodInfoName"
+      >
+        Name
+      </div>
+      <div
+        className="foodInfoValue"
+      >
+        
+      </div>
+    </div>
+    <div
+      className="foodDetailsInfoStyles"
+    >
+      <div
+        className="foodInfoName"
+      >
+        Category
+      </div>
+      <div
+        className="foodInfoValue"
+      >
+        
+      </div>
+    </div>
+    <div
+      className="foodDetailsInfoStyles"
+    >
+      <div
+        className="foodInfoName"
+      >
+        Area Specific
+      </div>
+      <div
+        className="foodInfoValue"
+      >
+        
+      </div>
+    </div>
+    <div
+      className="foodDetailsInfoStyles"
+    >
+      <div
+        className="foodInfoName"
+      >
+        Tags
+      </div>
+      <div
+        className="foodInfoValue"
+      >
+        
+      </div>
+    </div>
+    <div
+      className="foodDetailsInfoStyles"
+    >
+      <div
+        className="foodInfoName"
+      >
+        Instructions
+      </div>
+      <div
+        className="foodInfoValue"
+      >
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -10,7 +10,9 @@ const FoodDetails = ({
       <img className="foodDetailsImage" src={image} alt={name} />
     </div>
     <div className="foodDetailsInfo">
-      <h2 className="foodDetailsHeader">Food Details</h2>
+      <div className="foodDetailsHeader">
+        <h2 className="foodDeailsHeaderText">Food Details</h2>
+      </div>
       <FoodDetailsInfo name="Name" value={name} />
       <FoodDetailsInfo name="Category" value={category} />
       <FoodDetailsInfo name="Area Specific" value={strArea} />

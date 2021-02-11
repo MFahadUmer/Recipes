@@ -4,12 +4,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1.5rem;
+  overflow: hidden;
 }
 
 .foodImage {
   border-radius: 20px;
   height: 100%;
   width: 100%;
+  overflow: hidden;
+}
+
+.foodImage:hover {
+  transition: all ease-out 1s;
+  transform: rotate(360deg);
+  overflow: hidden;
+  z-index: -1;
 }
 
 .foods {

@@ -17,5 +17,21 @@
   line-height: 5rem;
   background-color: gray;
   border-radius: 25px;
+  transition: background-color 0.6s ease-out;
+}
+
+.foodDetailsHeader:hover {
+  background-color: white;
+  border: 5px groove orangered;
+}
+
+.foodDeailsHeaderText {
+  transition: color 0.6s ease-out;
   color: white;
+}
+
+.foodDeailsHeaderText:hover {
+  transition: ease-out all 0.6s;
+  transform: translateX(-200px);
+  color: #070774;
 }

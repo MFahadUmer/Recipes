@@ -10,6 +10,9 @@ const Navbar = ({ eventHandler }) => (
       <div className="logo">
         <Link to="/"><img className="logo" src={logo} alt="logo" /></Link>
       </div>
+      <div className="nytCooking">
+        NYT Cooking
+      </div>
       <div>
         <CategoriesContainer eventHandler={eventHandler} />
       </div>

@@ -18,3 +18,16 @@
 .logo {
   height: 100%;
 }
+
+.nytCooking {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  transition: color 0.3s ease-out;
+}
+
+.nytCooking:hover {
+  transition: all ease-out 0.3s;
+  transform: scale(1.5);
+  color: black;
+}

@@ -14,11 +14,15 @@ exports[`Food Details Component Tests matches the Food Details component snapsho
   <div
     className="foodDetailsInfo"
   >
-    <h2
+    <div
       className="foodDetailsHeader"
     >
-      Food Details
-    </h2>
+      <h2
+        className="foodDeailsHeaderText"
+      >
+        Food Details
+      </h2>
+    </div>
     <div
       className="foodDetailsInfoStyles"
     >

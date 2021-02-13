@@ -3,9 +3,9 @@ import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { render, screen } from '@testing-library/react';
-import Navbar from './Navbar';
+import Navbar from '../Navbar';
 import '@testing-library/jest-dom';
-import store from '../redux/store';
+import store from '../../redux/store';
 
 describe('Navbar Component Tests', () => {
   const eventHandler = jest.fn();

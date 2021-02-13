@@ -18,9 +18,9 @@ const FoodDetailsContainer = ({ match }) => {
     />
   ));
   return (
-    <div>
+    <>
       {selectedFood}
-    </div>
+    </>
   );
 };
 

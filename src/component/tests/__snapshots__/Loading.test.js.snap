@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading Component Tests matches the Loading component snapshot 1`] = `
+<div
+  className="loading"
+/>
+`;

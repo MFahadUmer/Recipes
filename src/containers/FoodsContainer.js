@@ -51,7 +51,7 @@ const FoodsContainer = ({
     }
   }
   return (
-    <div>
+    <>
       <div className="foodsContainer">
         {filterBooks}
       </div>
@@ -67,7 +67,7 @@ const FoodsContainer = ({
           activeClass="active"
         />
       </div>
-    </div>
+    </>
   );
 };
 

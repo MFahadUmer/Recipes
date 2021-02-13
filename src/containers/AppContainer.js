@@ -20,7 +20,7 @@ const AppContainer = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <BrowserRouter>
         <Navbar eventHandler={eventHandler} />
         <Switch>
@@ -30,7 +30,7 @@ const AppContainer = () => {
           <Route exact path="/foodDetails/:id" component={FoodDetailsContainer} />
         </Switch>
       </BrowserRouter>
-    </div>
+    </>
   );
 };
 

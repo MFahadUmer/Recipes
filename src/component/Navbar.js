@@ -21,11 +21,7 @@ const Navbar = ({ eventHandler }) => (
 );
 
 Navbar.propTypes = {
-  eventHandler: PropTypes.func,
-};
-
-Navbar.defaultProps = {
-  eventHandler: '',
+  eventHandler: PropTypes.func.isRequired,
 };
 
 export default Navbar;

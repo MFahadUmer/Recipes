@@ -21,11 +21,7 @@ const CategoriesContainer = ({ eventHandler }) => {
 };
 
 CategoriesContainer.propTypes = {
-  eventHandler: PropTypes.func,
-};
-
-CategoriesContainer.defaultProps = {
-  eventHandler: '',
+  eventHandler: PropTypes.func.isRequired,
 };
 
 export default CategoriesContainer;

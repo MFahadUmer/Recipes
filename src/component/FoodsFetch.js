@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Pagination from 'react-js-pagination';
-import Foods from '../component/Foods';
-import Loading from '../component/Loading';
+import Foods from './Foods';
+import Loading from './Loading';
 
-const FoodsContainer = ({
+const FoodsFetch = ({
   category, foods, error, loading,
 }) => {
   const [activePage, setActivePage] = useState(1);
@@ -71,17 +71,17 @@ const FoodsContainer = ({
   );
 };
 
-FoodsContainer.propTypes = {
+FoodsFetch.propTypes = {
   category: PropTypes.string,
   foods: PropTypes.arrayOf(PropTypes.shape()).isRequired,
   error: PropTypes.string,
   loading: PropTypes.bool,
 };
 
-FoodsContainer.defaultProps = {
+FoodsFetch.defaultProps = {
   category: '',
   error: '',
   loading: false,
 };
 
-export default FoodsContainer;
+export default FoodsFetch;

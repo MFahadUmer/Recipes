@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { fetchFood } from '../redux/food/foodActions';
 import Navbar from '../component/Navbar';
-import FoodsContainer from './FoodsContainer';
+import FoodsFetch from '../component/FoodsFetch';
 import FoodDetailsContainer from './FoodDetailsContainer';
 
 const AppContainer = () => {
@@ -25,7 +25,7 @@ const AppContainer = () => {
         <Navbar eventHandler={eventHandler} />
         <Switch>
           <Route exact path="/">
-            <FoodsContainer category={category} foods={foods} loading={loading} error={error} />
+            <FoodsFetch category={category} foods={foods} loading={loading} error={error} />
           </Route>
           <Route exact path="/foodDetails/:id" component={FoodDetailsContainer} />
         </Switch>

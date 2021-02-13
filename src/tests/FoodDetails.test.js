@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import FoodDetails from '../FoodDetails';
+import FoodDetails from '../component/FoodDetails';
 
 describe('Food Details Component Tests', () => {
   it('matches the Food Details component snapshot', () => {

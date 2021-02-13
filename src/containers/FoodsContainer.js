@@ -9,14 +9,14 @@ const FoodsContainer = ({
 }) => {
   const [activePage, setActivePage] = useState(1);
   const [startPoint, setStartPoint] = useState(0);
-  const [endPoint, setEndPoint] = useState(4);
+  const [endPoint, setEndPoint] = useState(12);
   let data;
   let filterBooks = '';
   let paginationTotalElements;
   const handlePageChange = pageNumber => {
     setActivePage(pageNumber);
-    setStartPoint((pageNumber - 1) * 4);
-    setEndPoint(pageNumber * 4);
+    setStartPoint((pageNumber - 1) * 12);
+    setEndPoint(pageNumber * 12);
   };
   if (loading) {
     return (
@@ -58,7 +58,7 @@ const FoodsContainer = ({
       <div>
         <Pagination
           activePage={activePage}
-          itemsCountPerPage={4}
+          itemsCountPerPage={12}
           totalItemsCount={paginationTotalElements}
           itemClass="paginationLi"
           linkClass="paginationLink"

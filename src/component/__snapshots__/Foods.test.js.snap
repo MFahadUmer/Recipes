@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Foods Component Tests matches the Foods component snapshot 1`] = `
+<div
+  className="foods"
+>
+  <img
+    alt=""
+    className="foodImage"
+    src=""
+  />
+  <a
+    href="/foodDetails/"
+    onClick={[Function]}
+  >
+    <div
+      className="foodName"
+    >
+      
+    </div>
+  </a>
+</div>
+`;

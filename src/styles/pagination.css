@@ -1,0 +1,33 @@
+.pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationLi {
+  margin: 10px 20px;
+  border: 3px inset #092758;
+  padding: 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.paginationLi:hover {
+  background-color: #357135;
+}
+
+.paginationLink {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  background-color: orangered;
+  color: white;
+}
+
+.active > a {
+  color: white;
+}

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar Component Tests matches the Navbar component snapshot 1`] = `
+<div
+  className="navbarContainer"
+>
+  <div
+    className="navbar"
+  >
+    <div
+      className="logo"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="logo"
+          className="logo"
+          src="logo.png"
+        />
+      </a>
+    </div>
+    <div
+      className="nytCooking"
+    >
+      NYT Cooking
+    </div>
+    <div>
+      <select
+        className="selectCategory"
+        id="categories"
+        name="categories"
+        onChange={[MockFunction]}
+      >
+        <option
+          className="selectCategory"
+          value="All"
+        >
+          All
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;

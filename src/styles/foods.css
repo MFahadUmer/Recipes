@@ -1,0 +1,39 @@
+.foodsContainer {
+  margin-top: 30px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.foodImage {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.foodImage:hover {
+  transition: all ease-out 1s;
+  transform: rotateY(180deg);
+}
+
+.foods {
+  position: relative;
+  background-color: gray;
+  border-radius: 20px;
+}
+
+.foodName {
+  position: absolute;
+  bottom: 0;
+  background-color: gray;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 0 20px 20px;
+}
